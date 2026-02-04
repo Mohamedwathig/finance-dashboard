@@ -1,7 +1,12 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
 
+// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  base: '/finance-dashboard/'  // ← critical for GitHub Pages
+  plugins: [
+    react(),
+    tailwindcss()
+  ],
+  base: '/finance-dashboard/', // This is CRITICAL for GitHub Pages
 })
